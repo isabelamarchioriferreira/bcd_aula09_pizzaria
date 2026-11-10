@@ -1,0 +1,17 @@
+USE pizzaria;
+
+DROP FUNCTION IF EXISTS moeda;
+
+DELIMITER //
+
+CREATE FUNCTION moeda(v FLOAT)
+RETURNS TEXT
+BEGIN
+    DECLARE x VARCHAR(20);
+
+    SET x = FORMAT(v,2,'de_DE');
+
+    RETURN CONCAT('R$ ', x);
+END//
+
+DELIMITER ;
