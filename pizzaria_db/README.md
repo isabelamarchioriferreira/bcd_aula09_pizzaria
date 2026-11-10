@@ -1,4 +1,4 @@
-# 🍕 Aula 09 - Pizzaria
+# Aula 09 - Pizzaria
 
 ## Descrição
 
